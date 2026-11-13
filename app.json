@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Distribo Delivery",
+    "slug": "distribo-delivery",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "distribodelivery",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aarvi.distribodelivery",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Distribo Delivery uses your location to navigate to retail stores and confirm delivery drops.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Distribo Delivery requires background location to verify transit routes and provide dispatch updates to warehouse dispatchers.",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.aarvi.distribodelivery",
+      "adaptiveIcon": {
+        "backgroundColor": "#294D32",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#F7F8F5"
+        }
+      ],
+      "expo-secure-store",
+      "expo-image",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Distribo Delivery to track delivery route and store drops.",
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
+

@@ -1,0 +1,33 @@
+node_modules/
+.expo/
+dist/
+web-build/
+
+# Native build directories (generated if prebuild is used)
+android/
+ios/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Expo generated
+expo-env.d.ts
+
+# Logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Keystores & keys
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# OS
+.DS_Store
+Thumbs.db
